@@ -1,0 +1,72 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: floralwhite;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#float {
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 20px 40px 20px;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 0px 10px;
+}
+
+#list-container {
+    margin: 10px 0px;
+}
+
+#list-grad-top {
+    height: 20px;
+    background-image: linear-gradient(to bottom, transparent, slateblue);
+}
+
+ul {
+    min-height: 200px;
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: slateblue;
+}
+
+#list-grad-bottom {
+    height: 20px;
+    background-image: linear-gradient(to top, transparent, slateblue);
+}
+
+li {
+    list-style-position: inside;
+}
+
+.deleting {
+    text-decoration: line-through;
+    animation: 1s forwards fadeout;
+}
+
+@keyframes fadeout {
+    to {
+        opacity: 0%;
+    }
+}
+
+#add-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+#input-text {
+    flex: auto;
+    margin-right: 10px;
+}
